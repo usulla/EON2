@@ -1,0 +1,21 @@
+@import "../../../sass/variables.scss";
+
+.TestStart {
+    .title {
+        text-align: center;
+        font-size: 2em;
+
+        span {
+            font-size: 0.7em;
+            font-weight: 400;
+        }
+    }
+
+    .battery_btn {
+        background: url('../../../images/Test/battery_btn.png') center center no-repeat;
+        background-size: cover;
+        height: 21vw;
+
+
+    }
+}

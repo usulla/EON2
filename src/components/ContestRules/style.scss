@@ -1,0 +1,170 @@
+@import "../../sass/variables.scss";
+
+.ContestRules {
+    display: inline-block;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    font-size: 15px;
+
+    @media (max-width: $mobile_p) {
+        font-size: 10px;
+    }
+
+    @media (min-width: $mobile_p+1) and (max-width: $mobile_l) {
+        font-size: 12px;
+    }
+
+    @media (min-width: $mobile_l+1) and (max-width: $tablets) {
+        font-size: 12px;
+    }
+
+    @media (min-width: $tablets+1) and (max-width: $desctops_s) {
+        font-size: 12px;
+    }
+
+    @media (min-width: $desctops_s) {
+        font-size: 15px;
+    }
+
+    .title1 {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        font-size: 2.2rem;
+
+        @media (max-width: $tablets) {
+            font-size: 1.7rem;
+            max-width: 70vw;
+            margin-left: 15vw;
+        }
+    }
+
+    .license {
+        opacity: 0.6;
+        color: #b1b1b1;
+        font-size: 13px;
+        display: inline-block;
+        clear: both;
+        font-weight: 400;
+        font-family: "GothamPro", sans-serif;
+        text-align: left;
+        width: 85vw;
+        max-width: 1600px;
+        margin: 70px auto 15px;
+
+        @media (max-width: $tablets) {
+            font-size: 10px;
+        }
+    }
+
+    .icons {
+        width: 85vw;
+        max-width: 1500px;
+        margin: 0 auto;
+        color: #ff7e00;
+        font-family: "GothamPro", sans-serif;
+        font-size: 1.2em;
+        font-weight: 700;
+        text-transform: uppercase;
+
+
+        .number {
+            font-size: 3em;
+
+            @media (max-width: $tablets) {
+                font-size: 2.2em;
+            }
+        }
+
+        .bg {
+            background: url('../../images/ContestRules/icon4.png') center center no-repeat;
+            top: -20%;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-size: 145%;
+            z-index: 1;
+        }
+
+        .icon {
+            width: 23%;
+            display: inline-block;
+            float: left;
+            margin: 0 1%;
+
+            @media (max-width: $tablets) {
+                width: 48%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            span {
+                color: #fff;
+            }
+
+            .description {
+                z-index: 2;
+                position: relative;
+                text-align: left;
+            }
+
+            &.icon1 {
+                padding-top: 22%;
+                background: url('../../images/ContestRules/icon1.png') center center no-repeat;
+                background-size: 115%;
+
+                @media (max-width: $tablets) {
+                    padding-top: 40%;
+                    background: url('../../images/ContestRules/icon1.png') center top no-repeat;
+                    background-size: 115%;
+                }
+
+            }
+
+            &.icon2 {
+                padding-top: 22%;
+                background: url('../../images/ContestRules/icon2.png') center center no-repeat;
+                background-size: 50%;
+
+                img {
+                    width: 35px;
+                    display: block;
+                    margin-top: 5px;
+
+                    width: 20px;
+                }
+
+                @media (max-width: $tablets) {
+                    padding-top: 40%;
+                    background: url('../../images/ContestRules/icon2.png') center top no-repeat;
+                    background-size: 50%;
+                }
+            }
+
+            &.icon3 {
+                padding-top: 22%;
+                background: url('../../images/ContestRules/icon3.png') center center no-repeat;
+                background-size: 50%;
+
+                @media (max-width: $tablets) {
+                    padding-top: 40%;
+                    background: url('../../images/ContestRules/icon3.png') center top no-repeat;
+                    background-size: 50%;
+                }
+            }
+
+            &.icon4 {
+                padding-top: 22%;
+                position: relative;
+
+                @media (max-width: $tablets) {
+                    padding-top: 40%;
+                }
+            }
+
+        }
+    }
+}
