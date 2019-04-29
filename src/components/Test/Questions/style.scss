@@ -183,11 +183,14 @@
     }
 }
 
+.battery_btn.btn, .battery_btn.btn0 {
+    background: url('../../../images/Test/battery_btn.png') center center no-repeat;
+    background-size: cover;
+}
 .battery_btn.btn1 {
     background: url('../../../images/Test/battery1.png') center center no-repeat;
     background-size: cover;
 }
-
 .battery_btn.btn2 {
     background: url('../../../images/Test/battery2.png') center center no-repeat;
     background-size: cover;

@@ -9,6 +9,7 @@ class Questions extends Component {
         this.state = {
             currentQuestion: 0,
             questionsLength: dataQuestions.questions.length,
+            trueAnswers:0,
             answers: [
                 [2, -2, 0],
                 [-2, 2, 0],
@@ -74,17 +75,18 @@ class Questions extends Component {
                     } else {
                         if (this.state.userPoints == 0) {
                             this.props.testpoints(1);
-                        } else if (this.state.userPoints == 2) {
+                        } else if (this.state.userPoints == 1) {
                             this.props.testpoints(2);
-                        } else if (
-                            this.state.userPoints == 4 ||
-                            this.state.userPoints == 6
-                        ) {
+                        } else if (this.state.userPoints == 2) {
                             this.props.testpoints(3);
-                        } else if (this.state.userPoints == 8) {
+                        } else if (this.state.userPoints == 3) {
                             this.props.testpoints(4);
-                        } else {
+                        } else if (this.state.userPoints == 4) {
                             this.props.testpoints(5);
+                        } else if (this.state.userPoints == 5) {
+                            this.props.testpoints(6);
+                        } else {
+                            this.props.testpoints(7);
                         }
                         this.props.updatetest(false, false, true);
 
@@ -99,7 +101,7 @@ class Questions extends Component {
             );
             // Summarize the points of the user
             this.setState({
-                userPoints: this.state.userPoints + Number(currentPoints)
+                userPoints: this.state.userPoints + Number(currentPoints)/2
             });
             if (currentPoints == -2 && this.state.userPoints == 0) {
                 this.setState({ userPoints: 0 });
@@ -111,8 +113,7 @@ class Questions extends Component {
         return (
             <div className="Questions">
                 <div
-                    className={`battery_btn btn${this.state.currentQuestion +
-                        1}`}
+                    className={`battery_btn btn${this.state.userPoints}`}
                 />
                 <div className="question_title">
                     {

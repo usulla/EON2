@@ -29,14 +29,15 @@ class FirstPage extends Component {
                     className="btn_for_scroll"
                 />
                 <div className="FirstPage__center-block">
+
+
+                    <div className="FirstPage__toptext">
                     <div className="logo">
                         <img src={logo_pesni} />
                         <div className="age_limit">
                             <img src={age_limit} />
                         </div>
                     </div>
-
-                    <div className="FirstPage__toptext">
                         <div className="titles">
                             <div className="only_desktop">
                                 <div className="title1">

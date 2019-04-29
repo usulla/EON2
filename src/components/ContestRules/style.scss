@@ -6,7 +6,7 @@
     background: #000;
     text-align: center;
     font-size: 15px;
-    min-height: 100vh;
+    min-height: calc(100vh + 2px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -45,26 +45,30 @@
 
     .titles {
         font-size: 1.2em;
-        margin-top: -70px;
+        margin-top: -3vh;
+
+        @media (max-width: $tablets) {
+            margin-top:auto;
+        }
     }
 
     .title1 {
         text-align: center;
         margin-top: 40px;
         margin-bottom: 50px;
-        font-size: 2.2rem;
+        font-size: 2.0rem;
 
         @media (max-width: $tablets) {
             font-size: 1.7rem;
-            max-width: 70vw;
-            margin-left: 15vw;
+           // max-width: 70vw;
+           // margin-left: 15vw;
         }
     }
 
     .license {
         opacity: 0.6;
         color: #b1b1b1;
-        font-size: 13px;
+        font-size: 12px;
         display: inline-block;
         clear: both;
         font-weight: 400;
@@ -72,9 +76,9 @@
         text-align: left;
         width: 85vw;
         max-width: 1600px;
-        margin: 70px auto 15px;
+        margin: 0px auto 0px;
         position: absolute;
-        bottom: 20px;
+        bottom: 15px;
 
         @media (max-width: $tablets) {
             font-size: 10px;
@@ -97,7 +101,7 @@
         margin: 0 auto 60px;
         color: #ff7e00;
         font-family: "GothamPro", sans-serif;
-        font-size: 1.2em;
+        font-size: 1.0em;
         font-weight: 700;
         text-transform: uppercase;
 
@@ -107,7 +111,7 @@
 
 
         .number {
-            font-size: 3em;
+            font-size: 2.2em;
 
             @media (max-width: $tablets) {
                 font-size: 2.2em;
@@ -147,12 +151,13 @@
                 z-index: 2;
                 position: relative;
                 text-align: left;
+                display: inline-block;
             }
 
             &.icon1 {
                 padding-top: 22%;
                 background: url('../../images/ContestRules/icon1.png') center center no-repeat;
-                background-size: 115%;
+                background-size: 125%;
 
                 @media (max-width: $tablets) {
                     padding-top: 40%;

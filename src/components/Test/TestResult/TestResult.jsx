@@ -6,7 +6,7 @@ class TestResult extends Component {
     render() {
         return (
             <div className="TestResult">
-                <div className={`battery_btn btn${this.props.testpoints}`} />
+                <div className={`battery_btn btn${this.props.testpoints-1}`} />
                 <div className="result_content">
                     <div className="result_title">
                         {resultText[Number(this.props.testpoints) - 1].title1}
@@ -63,6 +63,12 @@ const resultText = [
         title2: "кастингов!",
         text:
             "Твое выступление на кастингах еще долго будут обсуждать в социальных сетях, а продюсеры точно тебя не забудут. Несмотря на то, что тебе не удалось попасть в команду, ты все равно получаешь свою долю признания и популярности. Энергии в тебе много, а сдаваться не в твоих правилах, поэтому соберись, зарядись энергией E-ON ENERGY DRINK и в следующем году докажи, что ты победитель!"
+    },
+    {
+        title1: "Ты один из",
+        title2: "лучших!",
+        text:
+            "Тебе удается успешно пройти кастинги и своим обаянием влюбить в себя продюсеров. Многие соперники остались далеко позади, а в тебе еще достаточно энергии, чтобы в следующем году зажечь еще больше. Зарядись энергией E-ON ENERGY DRINK и докажи, что достоин стать победителем этого шоу!"
     },
     {
         title1: "Ты один из",

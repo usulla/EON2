@@ -10,7 +10,7 @@
 	flex-direction: column;
 	overflow: hidden;
 
-	@media (max-width: $tablets) {
+	@media (max-width: $mobile_l+1) and (orientation:portrait) {
 		font-size: 12px;
 		display: block;
 	}
@@ -23,7 +23,7 @@
 	.title2 {
 		max-width: 790px;
 
-		@media (max-width: $tablets) {
+		@media (max-width: $mobile_l+1) and (orientation:portrait) {
 			font-size: 12px !important;
 			margin-top: 22px !important;
 			height: 60px !important;
@@ -35,7 +35,7 @@
 
 
 		span.title2__plus {
-			@media (max-width: $tablets) {
+			@media (max-width: $mobile_l+1) and (orientation:portrait) {
 				font-size: 20px !important;
 				padding: 0 10px !important;
 			}
@@ -43,34 +43,30 @@
 	}
 
 	.bottles_line {
-		background: url("../../images/FirstPage/firstpage_bg4.jpg") center -100px no-repeat;
+		background: url("../../images/FirstPage/firstpage_bg4.png") center center no-repeat;
 		background-size: cover;
 		width: 100%;
 		text-align: center;
 		height: 100vh;
 		position: absolute;
 
-		@media (max-width: $tablets+1) {
-			background-size: 200%;
-			background-position: -20px center;
+		@media (max-width: $mobile_l+1) and (orientation:portrait) {
 			position: absolute;
-			bottom: -15vh;
 			z-index: 0;
-			background: url("../../images/FirstPage/bg_mob.jpg") center -80px no-repeat;
-			background-size: cover;
+			background: url("../../images/FirstPage/bg3_mob.jpg") center bottom no-repeat;
+			background-size: 140%;
+			top:0;
 		}
+		@media (max-width: $mobile_l+1) and (max-aspect-ratio: $max-aspect-ratio) and (min-aspect-ratio: 8/12){
+			background: url("../../images/FirstPage/bg3_mob.jpg") center bottom no-repeat;
+			background-size: 120%;
+		} 
 
-		@media (min-width: $tablets) and (min-aspect-ratio: 19/10) {
+		/*@media (min-width: $tablets) and (min-aspect-ratio: 19/10) {
 			background: url("../../images/FirstPage/firstpage_bg4.jpg") center -100px no-repeat;
 			background-size: cover;
 			bottom: auto;
-		}
-
-		@media (max-width: $mobile_l+1) {
-			background: url("../../images/FirstPage/bg_mob.jpg") center -110px no-repeat;
-			background-size: 130%;
-			bottom: auto;
-		}
+		} */
 	}
 
 	.FirstPage__center-block {
@@ -80,27 +76,28 @@
 		flex-direction: column;
 
 		//align-items: center;
-		@media (max-width: $tablets) {
+		@media (max-width: $mobile_l+1) and (orientation:portrait) {
 			display: block;
 			max-width: 600px;
 			margin: 0 auto;
 		}
 
 		.logo {
-			width: 35vw;
+			width: 31vw;
 			max-width: 456px;
-			position: absolute;
-			top: 16vh;
-			margin-left: 50vw;
+			//position: absolute;
+			position: relative;
+			//top: 10vh;
+			top:-10vh;
+			//margin-left: 50vw;
 			display: flex;
 			align-items: center;
 			z-index: 3;
 			// margin: 0 auto;
-
-			@media (max-width: $tablets) and (max-aspect-ratio: $max-aspect-ratio) {
+			/*@media (max-width: $tablets) and (max-aspect-ratio: $max-aspect-ratio) {
 				width: 70vw;
 				max-width: 456px;
-			}
+			} */
 
 			img {
 				width: 100%;
@@ -110,17 +107,19 @@
 				}
 			}
 
-			@media (max-width: $tablets) {
+			@media (max-width: $mobile_l+1) and (orientation:portrait) {
 				width: 86%;
 				display: flex;
 				justify-content: center;
 				flex-direction: column;
-				margin-left: 7%;
-				top: 3vh;
+				//margin-left: 7%;
+				//top: 3vh;
+				top:0;
 				margin-bottom: 12px;
 				position: relative;
 				z-index: 9;
 				align-items: flex-start;
+				
 			}
 		}
 
@@ -132,7 +131,7 @@
 			margin-left: 50vw;
 			padding-right: 20px;
 
-			@media (max-width: $tablets) {
+			@media (max-width: $mobile_l+1) and (orientation:portrait) {
 				padding-right: 0;
 				width: 86%;
 				left: 7%;
@@ -158,21 +157,27 @@
 	}
 
 	.age_limit {
-		color: #b1b1b1;
-		font-size: 12px;
-		position: absolute;
-		position: absolute;
-		right: -90px;
 		width: 40px;
+		//max-width: 2vw;
+		margin-left: 15px;
 
-		@media (max-width: $tablets) {
+		@media (max-width: $tablets) and (orientation:portrait) {
 			right: 20px;
 			width: 25px;
+			max-width: 100%;
+			margin-left: 15px;
+			position: absolute;
 		}
 
 		img {
 			float: left;
 			margin-right: 10px;
+			width: 2vw!important;
+			max-width: 40px;
+
+			@media (max-width: $tablets) and (orientation:portrait) {
+			    width: 73%!important;
+			}
 		}
 	}
 
@@ -185,15 +190,15 @@
 		z-index: 3;
 
 		.fa-arrow-circle-down {
-			width: 38px;
-			border-radius: 38px;
-			height: 38px;
+			width: 48px;
+			border-radius: 48px;
+			height: 48px;
 			color: #ff7e00;
-			font-size: 38px;
+			font-size: 48px;
 			box-shadow: 0 0 103px 7px rgba(255, 126, 0, 0.73);
 		}
 
-		@media (max-width: $tablets) {
+		@media (max-width: $mobile_l+1) and (orientation:portrait) {
 			bottom: 50px;
 		}
 	}
@@ -203,7 +208,7 @@
 
 .titles {
 	text-align: center;
-	font-size: 2.2em;
+	font-size: 2.0em;
 	line-height: 1.2;
 	text-transform: uppercase;
 
@@ -211,6 +216,9 @@
 		max-width: 95vw;
 		font-size: 1.2em;
 		margin: 0 auto;
+	}
+	@media (min-width: $mobile_l+1) and (max-width: $tablets){
+		font-size: 1.6em;
 	}
 
 	span {
@@ -247,18 +255,22 @@
 			justify-content: center;
 			box-shadow: 0 0 103px 7px rgba(255, 126, 0, 0.73);
 
+			@media (max-width: $mobile_l+1) {
+				font-size: 2.5vw;
+			padding: 25px 5vw 25px 5vw;
+			}
 			@media (min-width: 1981px) {
 				font-size: 27px !important;
 			}
 		}
 
 
-		@media (max-width: $mobile_l+1) {
+		@media (max-width: $mobile_l+1) and (orientation:portrait) {
 			font-size: 0.8em;
 			margin-top: 12px;
 		}
 
-		@media (max-width: $tablets+1) {
+		@media (max-width: $mobile_l+1) and (orientation:portrait) {
 			font-size: 0.8em;
 			margin-top: 12px;
 			max-width: 400px;
@@ -302,7 +314,7 @@
 			font-weight: 700;
 			font-size: 1.5rem;
 
-			@media (max-width: $tablets) {
+			@media (max-width: $mobile_l+1) and (orientation:portrait) {
 				font-size: 1.2rem;
 			}
 		}
