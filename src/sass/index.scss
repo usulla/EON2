@@ -60,9 +60,10 @@ body {
     font-weight: 300;
     background: $white;
     text-align: left;
-    overflow-x: hidden;
 }
-
+#root{
+    overflow: hidden;
+}
 .only_mobile {
     display: none;
 

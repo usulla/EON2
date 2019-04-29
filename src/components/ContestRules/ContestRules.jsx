@@ -23,7 +23,7 @@ class ContestRules extends Component {
                     <div className="icon icon1">
                         <div className="description">
                             <div className="number">01.</div>
-                            <div classNme="text">
+                            <div className="text">
                                 <span>Купи любой</span>
                                 <br />
                                 энергетический
@@ -34,7 +34,7 @@ class ContestRules extends Component {
                     <div className="icon icon2">
                         <div className="description">
                             <div className="number">02.</div>
-                            <div classNme="text">
+                            <div className="text">
                                 <span>Зайди в приложение</span>
                                 <br />
                                 ТНТ-CLUB
@@ -45,7 +45,7 @@ class ContestRules extends Component {
                     <div className="icon icon3">
                         <div className="description">
                             <div className="number">03.</div>
-                            <div classNme="text">
+                            <div className="text">
                                 <span>
                                     Отсканируй штрих-код
                                     <br />
@@ -60,7 +60,7 @@ class ContestRules extends Component {
                         <div className="bg" />
                         <div className="description">
                             <div className="number">04.</div>
-                            <div classNme="text">
+                            <div className="text">
                                 <span>Голосуй за любимого</span>
                                 <br />
                                 участника шоу «ПЕСНИ»
@@ -69,7 +69,7 @@ class ContestRules extends Component {
                     </div>
                 </div>
                 <div className='license'>
-                *Энергетический напиток. Киви бласт. Джинжер краш. Блэк пауэр. Цитрус панч. Алмонд раш. Срок проведения акции с 4 мая 2019 по 28 мая 2019. Подробности об организаторе акции, о правилах ее проведения, результатах мероприятия и сроках уточняйте на сайте tnt-online.ru и в ТНТ-CLUB.
+                <span>*</span>Энергетический напиток. Киви бласт. Джинжер краш. Блэк пауэр. Цитрус панч. Алмонд раш. Срок проведения акции с 4 мая 2019 по 28 мая 2019. Подробности об организаторе акции, о правилах ее проведения, результатах мероприятия и сроках уточняйте на сайте tnt-online.ru и в ТНТ-CLUB.
                 </div>
             </div>
         );

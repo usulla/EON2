@@ -56,17 +56,18 @@ class FirstPage extends Component {
                                     за любимого участника!
                                 </div>
                             </div>
-                            <a className="title2" href='/' target="_blank">
-                                Получи дополнительный голос!<span>+1</span>
+                            <a className="title2" href='http://tnt-club.com/' target="_blank">
+                                <span className="title2__text">Получи дополнительный голос!</span><span className="title2__plus">+1</span>
                             </a>
                         </div>
                     </div>
-                    <div className="bottles_line" />
-                    <a data-scroll href="#ContestRules" class="scroll-down">
+                   
+                    <a data-scroll href="#ContestRules" className="scroll-down">
                         <i className="fas fa-arrow-circle-down"></i>
 
                     </a>
                 </div>
+                 <div className="bottles_line" />
             </div>
         );
     }

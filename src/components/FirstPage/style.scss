@@ -11,22 +11,65 @@
 	overflow: hidden;
 
 	@media (max-width: $tablets) {
+		font-size: 12px;
+		display: block;
+	}
+
+	@media (max-width: $mobile_l+1) {
 		font-size: 18px;
 		display: block;
 	}
 
 	.title2 {
+		max-width: 790px;
+
 		@media (max-width: $tablets) {
 			font-size: 12px !important;
-			padding: 15px 9vw 15px 3vw !important;
 			margin-top: 22px !important;
+			height: 60px !important;
 		}
 
-		span {
+		@media (min-width: 1981px) {
+			font-size: 12px !important;
+		}
+
+
+		span.title2__plus {
 			@media (max-width: $tablets) {
 				font-size: 20px !important;
 				padding: 0 10px !important;
 			}
+		}
+	}
+
+	.bottles_line {
+		background: url("../../images/FirstPage/firstpage_bg4.jpg") center -100px no-repeat;
+		background-size: cover;
+		width: 100%;
+		text-align: center;
+		height: 100vh;
+		position: absolute;
+
+		@media (max-width: $tablets+1) {
+			background-size: 200%;
+			background-position: -20px center;
+			position: absolute;
+			bottom: -15vh;
+			z-index: 0;
+			background: url("../../images/FirstPage/bg_mob.jpg") center -80px no-repeat;
+			background-size: cover;
+		}
+
+		@media (min-width: $tablets) and (min-aspect-ratio: 19/10) {
+			background: url("../../images/FirstPage/firstpage_bg4.jpg") center -100px no-repeat;
+			background-size: cover;
+			bottom: auto;
+		}
+
+		@media (max-width: $mobile_l+1) {
+			background: url("../../images/FirstPage/bg_mob.jpg") center -110px no-repeat;
+			background-size: 130%;
+			bottom: auto;
 		}
 	}
 
@@ -39,6 +82,8 @@
 		//align-items: center;
 		@media (max-width: $tablets) {
 			display: block;
+			max-width: 600px;
+			margin: 0 auto;
 		}
 
 		.logo {
@@ -49,6 +94,7 @@
 			margin-left: 50vw;
 			display: flex;
 			align-items: center;
+			z-index: 3;
 			// margin: 0 auto;
 
 			@media (max-width: $tablets) and (max-aspect-ratio: $max-aspect-ratio) {
@@ -92,6 +138,8 @@
 				left: 7%;
 				margin-left: 0;
 				margin-top: 20px;
+				display: inline-block;
+				position: relative;
 			}
 		}
 
@@ -106,26 +154,7 @@
 			}
 		}
 
-		.bottles_line {
-			background: url("../../images/FirstPage/firstpage_bg3.png") center -100px no-repeat;
-			background-size: cover;
-			width: 100%;
-			text-align: center;
-			height: 110vh;
 
-			@media (max-width: $mobile_l+1) {
-				background-size: 200%;
-				background-position: -20px center;
-				position: absolute;
-				bottom: -15vh;
-				z-index: 0;
-			}
-
-			@media (min-width: $tablets) and (min-aspect-ratio: 19/10) {
-				background: url("../../images/FirstPage/firstpage_bg3.png") center -40px no-repeat;
-				background-size: cover;
-			}
-		}
 	}
 
 	.age_limit {
@@ -153,6 +182,7 @@
 		text-align: center;
 		animation: move_arrow 2s infinite;
 		left: calc(50% - 19px);
+		z-index: 3;
 
 		.fa-arrow-circle-down {
 			width: 38px;
@@ -164,7 +194,7 @@
 		}
 
 		@media (max-width: $tablets) {
-			bottom: 20px;
+			bottom: 50px;
 		}
 	}
 }
@@ -194,21 +224,44 @@
 
 	.title2 {
 		margin-top: 20px;
-		padding: 25px 9vw 25px 3vw;
-		box-shadow: 0 0 103px 7px rgba(255, 126, 0, 0.73);
 		color: #000;
-		border-radius: 4px 6px 6px 4px;
 		font-size: 1.5vw;
 		font-weight: 700;
-		background-color: #ff7e00;
 		margin-top: 70px;
 		display: block;
 		text-decoration: none;
 		position: relative;
+		height: 80px;
+
+		.title2__text {
+			color: #000;
+			background-color: #ff7e00;
+			padding: 25px 2vw 25px 2vw;
+			border-radius: 6px 0px 0px 6px;
+			font-size: 1.5vw;
+			float: left;
+			position: relative;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			box-shadow: 0 0 103px 7px rgba(255, 126, 0, 0.73);
+
+			@media (min-width: 1981px) {
+				font-size: 27px !important;
+			}
+		}
+
 
 		@media (max-width: $mobile_l+1) {
 			font-size: 0.8em;
 			margin-top: 12px;
+		}
+
+		@media (max-width: $tablets+1) {
+			font-size: 0.8em;
+			margin-top: 12px;
+			max-width: 400px;
 		}
 
 		img {
@@ -216,12 +269,11 @@
 			margin: 0 5px -0.1em 5px;
 		}
 
-		span {
-			position: absolute;
+		span.title2__plus {
 			top: 0;
 			right: 0;
 			height: 100%;
-			padding: 0 24px;
+			padding: 0 15px;
 			font-size: 2.5vw;
 			color: #000000;
 			display: flex;
@@ -231,6 +283,13 @@
 			text-transform: uppercase;
 			background: #fff;
 			border-radius: 0 6px 6px 0;
+			z-index: 2;
+			position: relative;
+			max-width: 16%;
+
+			@media (min-width: 1981px) {
+				font-size: 40px;
+			}
 		}
 	}
 

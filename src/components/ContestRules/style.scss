@@ -6,6 +6,22 @@
     background: #000;
     text-align: center;
     font-size: 15px;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
 
     @media (max-width: $mobile_p) {
         font-size: 10px;
@@ -25,6 +41,11 @@
 
     @media (min-width: $desctops_s) {
         font-size: 15px;
+    }
+
+    .titles {
+        font-size: 1.2em;
+        margin-top: -70px;
     }
 
     .title1 {
@@ -52,21 +73,37 @@
         width: 85vw;
         max-width: 1600px;
         margin: 70px auto 15px;
+        position: absolute;
+        bottom: 20px;
 
         @media (max-width: $tablets) {
             font-size: 10px;
+            position: relative;
+            bottom: 20px;
+            margin: 20px auto;
+        }
+
+        span {
+            top: -5px;
+            position: absolute;
+            left: -8px;
+            font-size: 17px;
         }
     }
 
     .icons {
         width: 85vw;
         max-width: 1500px;
-        margin: 0 auto;
+        margin: 0 auto 60px;
         color: #ff7e00;
         font-family: "GothamPro", sans-serif;
         font-size: 1.2em;
         font-weight: 700;
         text-transform: uppercase;
+
+        @media (max-width: $tablets) {
+            margin: 0 auto;
+        }
 
 
         .number {
@@ -95,6 +132,7 @@
 
             @media (max-width: $tablets) {
                 width: 48%;
+                margin-bottom: 20px;
             }
 
             img {
