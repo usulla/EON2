@@ -29,46 +29,59 @@ class FirstPage extends Component {
                     className="btn_for_scroll"
                 />
                 <div className="FirstPage__center-block">
-
-
                     <div className="FirstPage__toptext">
-                    <div className="logo">
-                        <img src={logo_pesni} />
-                        <div className="age_limit">
-                            <img src={age_limit} />
+                        <div className="animate-hidden animation-logo">
+                            <div className="logo">
+                                <img src={logo_pesni} />
+                                <div className="age_limit">
+                                    <img src={age_limit} />
+                                </div>
+                            </div>
                         </div>
-                    </div>
                         <div className="titles">
                             <div className="only_desktop">
-                                <div className="title1">
-                                    E-ON дарит тебе
-                                    <br />
-                                    <span>дополнительный голос</span>
-                                    <br />
-                                    за любимого участника!
+                                <div className="animate-hidden animation-title1">
+                                    <div className="title1">
+                                        E-ON дарит тебе
+                                        <br />
+                                        <span>дополнительный голос</span>
+                                        <br />
+                                        за любимого участника!
+                                    </div>
                                 </div>
                             </div>
                             <div className="only_mobile">
-                            <div className="title1">
+                            <div className="animate-hidden animation-title1">
+                                <div className="title1">
                                     E-ON дарит тебе
                                     <br />
-                                    <span>дополнительный <br /> голос&nbsp;</span>
-                                   
+                                    <span>
+                                        дополнительный <br /> голос&nbsp;
+                                    </span>
                                     за любимого участника!
                                 </div>
                             </div>
-                            <a className="title2" href='http://tnt-club.com/' target="_blank">
-                                <span className="title2__text">Получи дополнительный голос!</span><span className="title2__plus">+1</span>
-                            </a>
+                            </div>
+                            <div className="animate-hidden animation-title2">
+                                <a
+                                    className="title2"
+                                    href="http://tnt-club.com/"
+                                    target="_blank"
+                                >
+                                    <span className="title2__text">
+                                        Получи дополнительный голос!
+                                    </span>
+                                    <span className="title2__plus">+1</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                   
-                    <a data-scroll href="#ContestRules" className="scroll-down">
-                        <i className="fas fa-arrow-circle-down"></i>
 
+                    <a data-scroll href="#ContestRules" className="scroll-down">
+                        <i className="fas fa-arrow-circle-down" />
                     </a>
                 </div>
-                 <div className="bottles_line" />
+                <div className="bottles_line" />
             </div>
         );
     }
