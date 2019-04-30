@@ -104,10 +104,6 @@
         font-size: 1.0em;
         font-weight: 700;
         text-transform: uppercase;
-        -webkit-transform: translateY(-270%);
-        transform: translateY(-270%);
-        -webkit-animation: fadeInY 1s cubic-bezier(.2, .6, .2, 1) 2.8s forwards;
-        animation: fadeInY 1s cubic-bezier(.2, .6, .2, 1) 2.8s forwards;
 
         @media (max-width: $tablets) {
             margin: 0 auto;
