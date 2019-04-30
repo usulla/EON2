@@ -65,7 +65,7 @@ class FirstPage extends Component {
                             <div className="animate-hidden animation-title2">
                                 <a
                                     className="title2"
-                                    href="http://tnt-club.com/"
+                                    href="https://tnt-club.com/mobile/live/eon"
                                     target="_blank"
                                 >
                                     <span className="title2__text">
