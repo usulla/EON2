@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/GothamPro-Medium.caede75f.woff"
   },
   {
-    "revision": "93721fd1a07292bc2fbd",
+    "revision": "507b25acbaa06393adb6",
     "url": "/static/css/main.0cafb3c0.chunk.css"
   },
   {
@@ -44,16 +44,12 @@ self.__precacheManifest = [
     "url": "/static/media/GothamPro-Black.68d644bc.eot"
   },
   {
-    "revision": "3bdd287278996bd982d5b0b761f1be2f",
-    "url": "/static/media/GothamPro-Black.3bdd2872.ttf"
-  },
-  {
-    "revision": "33b6cd01c674e0c5d59cde2e48603324",
-    "url": "/static/media/GothamPro-Bold.33b6cd01.eot"
-  },
-  {
     "revision": "6222116d2c01b1dfeba3d7970e80849a",
     "url": "/static/media/GothamPro-Black.6222116d.woff"
+  },
+  {
+    "revision": "3bdd287278996bd982d5b0b761f1be2f",
+    "url": "/static/media/GothamPro-Black.3bdd2872.ttf"
   },
   {
     "revision": "aaa3ba91a32dda5f2df11d2301764fd8",
@@ -64,10 +60,6 @@ self.__precacheManifest = [
     "url": "/static/media/GothamPro-Bold.57a1bd79.ttf"
   },
   {
-    "revision": "6754c9c4b01fbaacee24d3dbf5dd8760",
-    "url": "/static/media/GothamPro-Light.6754c9c4.ttf"
-  },
-  {
     "revision": "90f8e664649cf758cd611e68d76e66ab",
     "url": "/static/media/GothamPro-Light.90f8e664.eot"
   },
@@ -76,12 +68,20 @@ self.__precacheManifest = [
     "url": "/static/media/GothamPro-Light.d24977b3.woff"
   },
   {
-    "revision": "93721fd1a07292bc2fbd",
-    "url": "/static/js/main.93721fd1.chunk.js"
+    "revision": "6754c9c4b01fbaacee24d3dbf5dd8760",
+    "url": "/static/media/GothamPro-Light.6754c9c4.ttf"
   },
   {
     "revision": "fa67313694dddf4d9526c423fff22510",
     "url": "/static/media/GothamPro-Medium.fa673136.eot"
+  },
+  {
+    "revision": "507b25acbaa06393adb6",
+    "url": "/static/js/main.507b25ac.chunk.js"
+  },
+  {
+    "revision": "33b6cd01c674e0c5d59cde2e48603324",
+    "url": "/static/media/GothamPro-Bold.33b6cd01.eot"
   },
   {
     "revision": "cbe1c9c0415b9601b97ea154512615bb",
@@ -136,19 +136,19 @@ self.__precacheManifest = [
     "url": "/static/media/battery3.98f03e67.png"
   },
   {
-    "revision": "7a3088d85795257e0329a0346d0e0b97",
-    "url": "/static/media/battery5.7a3088d8.png"
-  },
-  {
     "revision": "6a7a85ed59647a9ff77af156f095a121",
     "url": "/static/media/battery4.6a7a85ed.png"
+  },
+  {
+    "revision": "7a3088d85795257e0329a0346d0e0b97",
+    "url": "/static/media/battery5.7a3088d8.png"
   },
   {
     "revision": "31ecb91facbd113482900fb8130f2c71",
     "url": "/static/media/about_bg.31ecb91f.jpg"
   },
   {
-    "revision": "22102cfc56b3d51831f2d2ec2a451836",
+    "revision": "21e6598aa09690f5e92649b7245b03c8",
     "url": "/index.html"
   }
 ];

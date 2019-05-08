@@ -13,7 +13,7 @@ class ContestRules extends Component {
                 <div className="titles">
                     <div className="title_small">
                         Каждую неделю ты можешь<br/><span>получить дополнительный голос</span><br/> и
-                        отдать его за любимого участника шоу.
+                        и проголосовать дважды.
                     </div>
                     <div className="title1">
                         Что для этого <span>нужно сделать:</span>
