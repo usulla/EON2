@@ -20,71 +20,68 @@ class FirstPage extends Component {
 
         var scrollCount = 0;
         const testBlock = document.querySelector(".ContestRules");
+        
 
         return (
+
             <div className="FirstPage">
+               <div id="$ANIM_CONTAINER_ID">
+                <canvas id="canvas" width="" height="">
+                </canvas>
+                <div id="dom_overlay_container">
+                </div>
+            </div>
                 <a
                     data-scroll
                     href="#id_for_scroll"
                     className="btn_for_scroll"
                 />
                 <div className="FirstPage__center-block">
-                    <div className="FirstPage__toptext">
-                        <div className="animate-hidden animation-logo">
-                            <div className="logo">
-                                <img src={logo_pesni} />
-                                <div className="age_limit">
-                                    <img src={age_limit} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="titles">
-                            <div className="only_desktop">
-                                <div className="animate-hidden animation-title1">
-                                    <div className="title1">
-                                        E-ON дарит тебе
-                                        <br />
-                                        <span>дополнительный голос</span>
-                                        <br />
-                                        за любимого участника!
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="only_mobile">
-                            <div className="animate-hidden animation-title1">
-                                <div className="title1">
-                                    E-ON дарит тебе
-                                    <br />
-                                    <span>
-                                        дополнительный <br /> голос&nbsp;
-                                    </span>
-                                    за любимого участника!
-                                </div>
-                            </div>
-                            </div>
-                            <div className="animate-hidden animation-title2">
-                                <a
-                                    className="title2"
-                                    href="https://tnt-club.com/mobile/live/eon"
-                                    target="_blank"
-                                >
-                                    <span className="title2__text">
-                                        Получи дополнительный голос!
-                                    </span>
-                                    <span className="title2__plus">+1</span>
-                                </a>
-                            </div>
+                    <div className="logo">
+                        <img src={logo_pesni} />
+                        <div className="age_limit">
+                            <img src={age_limit} />
                         </div>
                     </div>
 
+                    <div className="FirstPage__toptext">
+                        <div className="titles">
+                            <div className="only_desktop">
+                                <div className="title1">
+                                    E-ON дарит тебе
+                                    <br />
+                                    <span>дополнительный голос</span>
+                                    <br />
+                                    за любимую команду!
+                                </div>
+                            </div>
+                            <div className="only_mobile">
+                            <div className="title1">
+                                    E-ON дарит тебе
+                                    <br />
+                                    <span>дополнительный <br /> голос&nbsp;</span>
+                                   
+                                    за любимую команду!
+                                </div>
+                            </div>
+                            <a className="title2" href='http://tnt-club.com/' target="_blank">
+                                <span className="title2__text">Получи дополнительный голос!</span><span className="title2__plus">+1</span>
+                            </a>
+                        </div>
+                    </div>
+                   
                     <a data-scroll href="#ContestRules" className="scroll-down">
-                        <i className="fas fa-arrow-circle-down" />
+                        <i className="fas fa-arrow-circle-down"></i>
+
                     </a>
                 </div>
-                <div className="bottles_line" />
+                 <div className="bottles_line" />
             </div>
         );
     }
 }
+
+
+
 
 export default FirstPage;
