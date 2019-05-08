@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/GothamPro-Medium.caede75f.woff"
   },
   {
-    "revision": "fa10603cd97cdcee6063",
+    "revision": "93721fd1a07292bc2fbd",
     "url": "/static/css/main.0cafb3c0.chunk.css"
   },
   {
@@ -40,10 +40,6 @@ self.__precacheManifest = [
     "url": "/static/media/bottle5.f6b6e504.png"
   },
   {
-    "revision": "6222116d2c01b1dfeba3d7970e80849a",
-    "url": "/static/media/GothamPro-Black.6222116d.woff"
-  },
-  {
     "revision": "68d644bc10b53bcbd0e09cbaa679fe71",
     "url": "/static/media/GothamPro-Black.68d644bc.eot"
   },
@@ -56,6 +52,10 @@ self.__precacheManifest = [
     "url": "/static/media/GothamPro-Bold.33b6cd01.eot"
   },
   {
+    "revision": "6222116d2c01b1dfeba3d7970e80849a",
+    "url": "/static/media/GothamPro-Black.6222116d.woff"
+  },
+  {
     "revision": "aaa3ba91a32dda5f2df11d2301764fd8",
     "url": "/static/media/GothamPro-Bold.aaa3ba91.woff"
   },
@@ -64,20 +64,20 @@ self.__precacheManifest = [
     "url": "/static/media/GothamPro-Bold.57a1bd79.ttf"
   },
   {
-    "revision": "d24977b3aca5df089137cdc397d4e8d8",
-    "url": "/static/media/GothamPro-Light.d24977b3.woff"
+    "revision": "6754c9c4b01fbaacee24d3dbf5dd8760",
+    "url": "/static/media/GothamPro-Light.6754c9c4.ttf"
   },
   {
     "revision": "90f8e664649cf758cd611e68d76e66ab",
     "url": "/static/media/GothamPro-Light.90f8e664.eot"
   },
   {
-    "revision": "6754c9c4b01fbaacee24d3dbf5dd8760",
-    "url": "/static/media/GothamPro-Light.6754c9c4.ttf"
+    "revision": "d24977b3aca5df089137cdc397d4e8d8",
+    "url": "/static/media/GothamPro-Light.d24977b3.woff"
   },
   {
-    "revision": "fa10603cd97cdcee6063",
-    "url": "/static/js/main.fa10603c.chunk.js"
+    "revision": "93721fd1a07292bc2fbd",
+    "url": "/static/js/main.93721fd1.chunk.js"
   },
   {
     "revision": "fa67313694dddf4d9526c423fff22510",
@@ -124,16 +124,12 @@ self.__precacheManifest = [
     "url": "/static/media/battery_btn.bdec842f.png"
   },
   {
-    "revision": "16d516879840c8c3168b151d6d4073a2",
-    "url": "/static/media/battery1.16d51687.png"
-  },
-  {
     "revision": "8d1fc60dacb02d19ad644ea195a692c7",
     "url": "/static/media/battery2.8d1fc60d.png"
   },
   {
-    "revision": "6a7a85ed59647a9ff77af156f095a121",
-    "url": "/static/media/battery4.6a7a85ed.png"
+    "revision": "16d516879840c8c3168b151d6d4073a2",
+    "url": "/static/media/battery1.16d51687.png"
   },
   {
     "revision": "98f03e6781a9559deb43bf797be96569",
@@ -144,11 +140,15 @@ self.__precacheManifest = [
     "url": "/static/media/battery5.7a3088d8.png"
   },
   {
+    "revision": "6a7a85ed59647a9ff77af156f095a121",
+    "url": "/static/media/battery4.6a7a85ed.png"
+  },
+  {
     "revision": "31ecb91facbd113482900fb8130f2c71",
     "url": "/static/media/about_bg.31ecb91f.jpg"
   },
   {
-    "revision": "08eaad34e976a76b9494d9fc46204124",
+    "revision": "22102cfc56b3d51831f2d2ec2a451836",
     "url": "/index.html"
   }
 ];

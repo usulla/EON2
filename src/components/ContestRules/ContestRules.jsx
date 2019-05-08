@@ -61,9 +61,9 @@ class ContestRules extends Component {
                         <div className="description">
                             <div className="number">04.</div>
                             <div className="text">
-                                <span>Голосуй за любимого</span>
+                                <span>Голосуй за любимую</span>
                                 <br />
-                                участника шоу «ПЕСНИ»
+                                команду шоу «ПЕСНИ»
                             </div>
                         </div>
                     </div>
